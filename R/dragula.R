@@ -139,6 +139,6 @@ dragulaValue <- function(x) {
 useDragulajs <- function() {
   shinyjs::extendShinyjs(text = "shinyjs.refreshDragulaR = function(params) {
     dragulaR.get(params[0])()
-}")
+}", functions =c('refreshDragulaR'))
 }
 
